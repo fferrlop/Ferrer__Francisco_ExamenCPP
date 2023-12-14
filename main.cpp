@@ -52,7 +52,15 @@ void imprimirEstudiante(estudiante est) {
 
 //Estructura del Estudiante: imprimir C
 void imprimirEstudianteC(estudianteC est) {
-    std::cout << "(C) Nombre: " << est.nombre << ", Edad: " << est.edad << ", Promedio: " << est.promedio << std::endl;
+    printf("(C) Nombre: %s, Edad: %d, Promedio: %.2f\n", est.nombre, est.edad, est.promedio);
+
+    //Gestion de materias (C)
+    printf("Materias:");
+        for (int i = 0; i < est.numMaterias; ++i) {
+            printf(" %s", est.materias[i]);
+        }
+        printf("\n");
+
 }
 
 int main() {
