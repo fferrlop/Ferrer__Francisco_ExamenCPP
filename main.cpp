@@ -60,7 +60,7 @@ int main() {
             Estudiante1.nombre = "Fran";
             Estudiante1.edad = 20;
             Estudiante1.promedio = 7.5;
-
+        //Gestión de Materias (C++)
             agregarMateria(Estudiante1, "Matematicas");
             agregarMateria(Estudiante1, "Programacion");
 
