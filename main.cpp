@@ -145,6 +145,13 @@ void registrarAsistenciaC(struct estudianteC *est, struct AsistenciaC asistencia
     }
 }
 
+void mostrarAsistenciaC(struct estudianteC est) {
+    printf("Asistencia de %s:\n", est.nombre);
+    for (int i = 0; i < est.numAsistencias; ++i) {
+        imprimirAsistenciaC(est.asistencias[i]);
+    }
+}
+
 int main() {
 
 //Estructura del Estudiante: Main para C++
