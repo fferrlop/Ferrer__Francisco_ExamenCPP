@@ -19,16 +19,17 @@ struct estudianteC {
 
 //imprimir C++
 void imprimirEstudiante(estudiante est) {
-    std::cout << "Nombre: " << est.nombre << ", Edad: " << est.edad << ", Promedio: " << est.promedio << std::endl;
+    std::cout << "(C++) Nombre: " << est.nombre << ", Edad: " << est.edad << ", Promedio: " << est.promedio << std::endl;
 }
 
 //imprimir C
 void imprimirEstudianteC(estudianteC est) {
-    std::cout << "Nombre: " << est.nombre << ", Edad: " << est.edad << ", Promedio: " << est.promedio << std::endl;
+    std::cout << "(C) Nombre: " << est.nombre << ", Edad: " << est.edad << ", Promedio: " << est.promedio << std::endl;
 }
 
 int main() {
 
+//Main para C++
     estudiante Estudiante1;
 
             Estudiante1.nombre = "Fran";
@@ -37,7 +38,7 @@ int main() {
 
     imprimirEstudiante(Estudiante1);
 
-
+//Main para C
     struct estudianteC Estudiante1C;
 
             strcpy(Estudiante1C.nombre, "Antonio");
