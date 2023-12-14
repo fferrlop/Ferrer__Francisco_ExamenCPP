@@ -8,7 +8,7 @@ struct estudiante {
 };
 
 void imprimirEstudiante(estudiante est) {
-
+    std::cout << "Nombre: " << est.nombre << ", Edad: " << est.edad << ", Promedio: " << est.promedio << std::endl;
 }
 int main() {
     std::cout << "Hello, World!" << std::endl;
