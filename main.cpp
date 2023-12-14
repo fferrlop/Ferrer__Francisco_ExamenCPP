@@ -28,6 +28,30 @@ public:
             : fecha(fecha), materia(materia), estado(estado) {}
 };
 
+//Estructura del Estudiante: imprimir C++
+void imprimirEstudiante(estudiante est) {
+    std::cout << "(C++) Nombre: "<< est.nombre << ", Edad: " << est.edad << ", Promedio: " << est.promedio << std::endl;
+
+    //Gestión de Materias (C++)
+    std::cout << "Materias: ";
+
+    for (const auto& materia : est.materias) {
+        std::cout << " " << materia;
+    }
+
+    std::cout << std::endl;
+}
+
+void agregarMateria(estudiante& est, const std::string& materia) {
+    est.materias.push_back(materia);
+}
+
+void eliminarMateria(estudiante& est, const std::string& materia) {
+    auto it = std::find(est.materias.begin(), est.materias.end(), materia);
+    if (it != est.materias.end()) {
+        est.materias.erase(it);
+    }
+}
 
 //Clase asistencia (C++)
 void imprimirAsistencia(const Asistencia& asistencia) {
@@ -55,32 +79,6 @@ struct estudianteC {
     char materias[30][30];
     int numMaterias;
 };
-
-//Estructura del Estudiante: imprimir C++
-void imprimirEstudiante(estudiante est) {
-    std::cout << "(C++) Nombre: "<< est.nombre << ", Edad: " << est.edad << ", Promedio: " << est.promedio << std::endl;
-
-    //Gestión de Materias (C++)
-    std::cout << "Materias: ";
-
-        for (const auto& materia : est.materias) {
-            std::cout << " " << materia;
-        }
-
-    std::cout << std::endl;
-}
-
-    void agregarMateria(estudiante& est, const std::string& materia) {
-        est.materias.push_back(materia);
-    }
-
-    void eliminarMateria(estudiante& est, const std::string& materia) {
-        auto it = std::find(est.materias.begin(), est.materias.end(), materia);
-        if (it != est.materias.end()) {
-            est.materias.erase(it);
-        }
-    }
-
 
 //Estructura del Estudiante: imprimir C
 void imprimirEstudianteC(estudianteC est) {
