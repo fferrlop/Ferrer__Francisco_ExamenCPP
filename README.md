@@ -1,5 +1,15 @@
 Programación:
 
+https://github.com/fferrlop/Ferrer__Francisco_ExamenCPP.git
+
+
+----Estructura del Estudiante:
+
+La mayor diferencia entre C++ y C en este ejercicio son por ejemplo:
+
+1. El uso de cadenas en C++ con std::string mientras que C usa Arrays como char nombre[30]
+2. Para imprimir en la consola en C++ usamos std::cout en vez de printf como en C
+
 
 Tipo test:
 
