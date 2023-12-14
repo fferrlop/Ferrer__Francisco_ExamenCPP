@@ -14,6 +14,17 @@ struct estudiante {
     std::vector<std::string> materias;
 };
 
+//Clase asistencia (C++)
+class Asistencia {
+public:
+    std::string fecha;
+    std::string materia;
+    std::string estado;
+
+    Asistencia(const std::string& fecha, const std::string& materia, const std::string& estado)
+            : fecha(fecha), materia(materia), estado(estado) {}
+};
+
 //Estructura del Estudiante: struct C
 struct estudianteC {
     char nombre[30];
