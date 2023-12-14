@@ -20,6 +20,10 @@ La mayor diferencia entre C++ y C en este ejercicio son por ejemplo:
 
 ----Registro de Asistencia:
 
+1. Como antes, el manejo de cadenas o arrays
+2. El C++ gestiona mejor el uso de memoria
+3. C requiere un trabajo más manual
+
 
 Tipo test:
 
