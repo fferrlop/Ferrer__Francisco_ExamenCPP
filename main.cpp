@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cstring>
+#include <vector>
+#include <algorithm>
 #include <stdio.h>
 #include <string.h>
 
@@ -8,6 +10,8 @@ struct estudiante {
     std::string nombre;
     int edad;
     float promedio;
+    //Gestión de Materias (C++)
+    std::vector<std::string> materias;
 };
 
 //Estructura del Estudiante: struct C
@@ -19,8 +23,18 @@ struct estudianteC {
 
 //Estructura del Estudiante: imprimir C++
 void imprimirEstudiante(estudiante est) {
-    std::cout << "(C++) Nombre: " << est.nombre << ", Edad: " << est.edad << ", Promedio: " << est.promedio << std::endl;
+    std::cout << "(C++) Nombre: "<< est.nombre << ", Edad: " << est.edad << ", Promedio: " << est.promedio << std::endl;
+
+    //Gestión de Materias (C++)
+    std::cout << "Materias: ";
+
+        for (const auto& materia : est.materias) {
+            std::cout << " " << materia;
+        }
+
+    std::cout << std::endl;
 }
+
 
 //Estructura del Estudiante: imprimir C
 void imprimirEstudianteC(estudianteC est) {
