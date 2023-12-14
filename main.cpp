@@ -25,6 +25,13 @@ public:
             : fecha(fecha), materia(materia), estado(estado) {}
 };
 
+
+//Clase asistencia (C++)
+void imprimirAsistencia(const Asistencia& asistencia) {
+    std::cout << "Fecha: " << asistencia.fecha << ", Materia: " << asistencia.materia
+              << ", Estado: " << asistencia.estado << std::endl;
+}
+
 //Estructura del Estudiante: struct C
 struct estudianteC {
     char nombre[30];
