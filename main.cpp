@@ -39,6 +39,13 @@ void imprimirEstudiante(estudiante est) {
         est.materias.push_back(materia);
     }
 
+    void eliminarMateria(estudiante& est, const std::string& materia) {
+        auto it = std::find(est.materias.begin(), est.materias.end(), materia);
+        if (it != est.materias.end()) {
+            est.materias.erase(it);
+        }
+    }
+
 
 //Estructura del Estudiante: imprimir C
 void imprimirEstudianteC(estudianteC est) {
