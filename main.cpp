@@ -61,6 +61,13 @@ int main() {
             Estudiante1.edad = 20;
             Estudiante1.promedio = 7.5;
 
+            agregarMateria(Estudiante1, "Matematicas");
+            agregarMateria(Estudiante1, "Programacion");
+
+    imprimirEstudiante(Estudiante1);
+
+            eliminarMateria(Estudiante1, "Matematicas");
+
     imprimirEstudiante(Estudiante1);
 
 //Estructura del Estudiante: Main para C
