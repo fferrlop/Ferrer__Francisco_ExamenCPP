@@ -63,12 +63,29 @@ void imprimirEstudianteC(estudianteC est) {
 }
 
     void agregarMateriaC(struct estudianteC *est, const char *materia) {
+
         if (est->numMaterias < 5) {
             strcpy(est->materias[est->numMaterias], materia);
             est->numMaterias++;
-        } else {
+        }
+        else {
             printf("No se pueden agregar más materias.\n");
         }
+    }
+
+    void eliminarMateriaC(struct estudianteC *est, const char *materia) {
+        for (int i = 0; i < est->numMaterias; ++i) {
+
+            if (strcmp(est->materias[i], materia) == 0) {
+
+                for (int j = i; j < est->numMaterias - 1; ++j) {
+                    strcpy(est->materias[j], est->materias[j + 1]);
+                }
+                est->numMaterias--;
+                return;
+            }
+        }
+        printf("La materia no se encontró en la lista.\n");
     }
 
 
