@@ -1,7 +1,8 @@
 Programación:
 
 
-Estructura del Estudiante:
+----Estructura del Estudiante:
+
 La mayor diferencia entre C++ y C en este ejercicio son por ejemplo:
 
 1. El uso de cadenas en C++ con std::string mientras que C usa Arrays como char nombre[30]
