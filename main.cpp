@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 
+class Asistencia;
 //Estructura del Estudiante: struct C++
 struct estudiante {
     std::string nombre;
@@ -12,6 +13,8 @@ struct estudiante {
     float promedio;
     //Gestión de Materias (C++)
     std::vector<std::string> materias;
+    //Gestión de Asistencias (C++)
+    std::vector<Asistencia> asistencias;
 };
 
 //Clase asistencia (C++)
@@ -30,6 +33,10 @@ public:
 void imprimirAsistencia(const Asistencia& asistencia) {
     std::cout << "Fecha: " << asistencia.fecha << ", Materia: " << asistencia.materia
               << ", Estado: " << asistencia.estado << std::endl;
+}
+
+void registrarAsistencia(estudiante& est, const Asistencia& asistencia) {
+    est.asistencias.push_back(asistencia);
 }
 
 //Estructura del Estudiante: struct C
