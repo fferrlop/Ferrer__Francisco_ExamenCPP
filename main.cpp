@@ -70,6 +70,15 @@ void mostrarAsistencia(const estudiante& est) {
     }
 }
 
+//Clase asistencia (C)
+
+struct AsistenciaC {
+    char fecha[30];
+    char materia[30];
+    char estado[30];
+};
+
+
 //Estructura del Estudiante: struct C
 struct estudianteC {
     char nombre[30];
