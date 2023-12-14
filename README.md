@@ -11,6 +11,16 @@ La mayor diferencia entre C++ y C en este ejercicio son por ejemplo:
 2. Para imprimir en la consola en C++ usamos std::cout en vez de printf como en C
 
 
+----Gestión de Materias:
+
+1. Como antes, C usa arrays de char materias[30][30]; y C++ usa std::string
+2. C utiliza el bucle for para realizar busquedas mientras que C++ usa std::vector
+3. C usa punteros mientras que C++ usa referencias
+
+
+----Registro de Asistencia:
+
+
 Tipo test:
 
 1. ¿Cuál es la principal diferencia entre la estructura básica del programa en C y C++?
