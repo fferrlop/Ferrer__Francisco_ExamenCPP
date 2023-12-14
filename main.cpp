@@ -60,8 +60,17 @@ void imprimirEstudianteC(estudianteC est) {
             printf(" %s", est.materias[i]);
         }
         printf("\n");
-
 }
+
+    void agregarMateriaC(struct estudianteC *est, const char *materia) {
+        if (est->numMaterias < 5) {
+            strcpy(est->materias[est->numMaterias], materia);
+            est->numMaterias++;
+        } else {
+            printf("No se pueden agregar más materias.\n");
+        }
+    }
+
 
 int main() {
 
