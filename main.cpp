@@ -71,6 +71,8 @@ void mostrarAsistencia(const estudiante& est) {
 }
 
 
+
+
 //Clase asistencia (C)
 struct AsistenciaC {
     char fecha[30];
@@ -132,6 +134,15 @@ void imprimirEstudianteC(estudianteC est) {
 
 void imprimirAsistenciaC(struct AsistenciaC asistencia) {
     printf("Fecha: %s, Materia: %s, Estado: %s\n", asistencia.fecha, asistencia.materia, asistencia.estado);
+}
+
+void registrarAsistenciaC(struct estudianteC *est, struct AsistenciaC asistencia) {
+    if (est->numAsistencias < 10) {
+        est->asistencias[est->numAsistencias] = asistencia;
+        est->numAsistencias++;
+    } else {
+        printf("No se pueden agregar más asistencias.\n");
+    }
 }
 
 int main() {
