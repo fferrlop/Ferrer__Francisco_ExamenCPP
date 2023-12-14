@@ -35,6 +35,10 @@ void imprimirEstudiante(estudiante est) {
     std::cout << std::endl;
 }
 
+    void agregarMateria(estudiante& est, const std::string& materia) {
+        est.materias.push_back(materia);
+    }
+
 
 //Estructura del Estudiante: imprimir C
 void imprimirEstudianteC(estudianteC est) {
