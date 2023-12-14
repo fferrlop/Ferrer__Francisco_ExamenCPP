@@ -97,7 +97,7 @@ int main() {
             Estudiante1.nombre = "Fran";
             Estudiante1.edad = 20;
             Estudiante1.promedio = 7.5;
-        //Gestión de Materias (C++)
+    //Gestión de Materias (C++)
                 agregarMateria(Estudiante1, "Matematicas");
                 agregarMateria(Estudiante1, "Programacion");
 
@@ -113,13 +113,15 @@ int main() {
             strcpy(Estudiante1C.nombre, "Antonio");
             Estudiante1C.edad = 21;
             Estudiante1C.promedio = 8.5;
-            //Gestion de materias (C)
+    //Gestion de materias (C)
             Estudiante1C.numMaterias = 0;
 
                 agregarMateriaC(&Estudiante1C, "Matematicas");
                 agregarMateriaC(&Estudiante1C, "Programacion");
 
     imprimirEstudianteC(Estudiante1C);
+
+                eliminarMateriaC(&Estudiante1C, "Matematicas");
 
     imprimirEstudianteC(Estudiante1C);
 
