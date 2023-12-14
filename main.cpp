@@ -19,6 +19,9 @@ struct estudianteC {
     char nombre[30];
     int edad;
     float promedio;
+    //Gestion de materias (C)
+    char materias[30][30];
+    int numMaterias;
 };
 
 //Estructura del Estudiante: imprimir C++
