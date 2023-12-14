@@ -39,6 +39,13 @@ void registrarAsistencia(estudiante& est, const Asistencia& asistencia) {
     est.asistencias.push_back(asistencia);
 }
 
+void mostrarAsistencia(const estudiante& est) {
+    std::cout << "Asistencia de " << est.nombre << ":" << std::endl;
+    for (const auto& asistencia : est.asistencias) {
+        imprimirAsistencia(asistencia);
+    }
+}
+
 //Estructura del Estudiante: struct C
 struct estudianteC {
     char nombre[30];
