@@ -139,6 +139,11 @@ int main() {
 
     imprimirEstudiante(Estudiante1);
 
+        Asistencia asistencia1("2023-01-01", "Matemáticas", "asistió");
+        registrarAsistencia(Estudiante1, asistencia1);
+
+    mostrarAsistencia(Estudiante1);
+
 //Estructura del Estudiante: Main para C
     struct estudianteC Estudiante1C;
 
