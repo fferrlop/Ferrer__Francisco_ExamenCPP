@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cstring>
+#include <stdio.h>
+#include <string.h>
 
 struct estudiante {
     std::string nombre;
@@ -7,11 +9,15 @@ struct estudiante {
     float promedio;
 };
 
+struct estudianteC {
+    char nombre[30];
+    int edad;
+    float promedio;
+};
+
 void imprimirEstudiante(estudiante est) {
     std::cout << "Nombre: " << est.nombre << ", Edad: " << est.edad << ", Promedio: " << est.promedio << std::endl;
 }
-
-
 
 
 int main() {
