@@ -3,6 +3,17 @@ Programación:
 https://github.com/fferrlop/Ferrer__Francisco_ExamenCPP.git
 
 
+Conclusión:
+
+Recomendaria que se usara el lenguaje C++ debido a que al usar cadenas este permite un manejo mas automático y sencillo al contrario que el lenguaje C debido al tamaño de este proyecto.
+
+Recomendaciones:
+
+Deberian fijarse en el tamaño y sus requisitos para informarse sobre que lenguaje usar. Aparte tambien deberían fijarse de como afectaria a largo plazo el trabajo, de tal manera que al cabo de un tiempo no se lie el código.
+
+
+
+
 ----Estructura del Estudiante:
 
 La mayor diferencia entre C++ y C en este ejercicio son por ejemplo:
@@ -24,6 +35,8 @@ La mayor diferencia entre C++ y C en este ejercicio son por ejemplo:
 2. El C++ gestiona mejor el uso de memoria
 3. C requiere un trabajo más manual
 
+
+No me ha dado tiempo a realizar el apartado de manejo de excepciones.
 
 Tipo test:
 
