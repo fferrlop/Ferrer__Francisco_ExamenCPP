@@ -35,8 +35,16 @@ int main() {
             Estudiante1.edad = 20;
             Estudiante1.promedio = 7.5;
 
-
     imprimirEstudiante(Estudiante1);
+
+
+    struct estudianteC Estudiante1C;
+
+            strcpy(Estudiante1C.nombre, "Antonio");
+            Estudiante1C.edad = 21;
+            Estudiante1C.promedio = 8.5;
+
+    imprimirEstudianteC(Estudiante1C);
 
     return 0;
 }
