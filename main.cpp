@@ -70,8 +70,8 @@ void mostrarAsistencia(const estudiante& est) {
     }
 }
 
-//Clase asistencia (C)
 
+//Clase asistencia (C)
 struct AsistenciaC {
     char fecha[30];
     char materia[30];
@@ -87,6 +87,9 @@ struct estudianteC {
     //Gestion de materias (C)
     char materias[30][30];
     int numMaterias;
+    //Gestion de asistencias (C)
+        struct AsistenciaC asistencias[30];
+        int numAsistencias;
 };
 
 //Estructura del Estudiante: imprimir C
@@ -127,6 +130,9 @@ void imprimirEstudianteC(estudianteC est) {
         printf("La materia no se encontró en la lista.\n");
     }
 
+void imprimirAsistenciaC(struct AsistenciaC asistencia) {
+    printf("Fecha: %s, Materia: %s, Estado: %s\n", asistencia.fecha, asistencia.materia, asistencia.estado);
+}
 
 int main() {
 
